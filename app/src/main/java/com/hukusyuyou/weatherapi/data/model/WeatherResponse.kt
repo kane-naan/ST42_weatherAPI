@@ -11,5 +11,8 @@ data class WeatherResponse(
 
 data class CurrentWeather(
     val temperature: Double,
-    val windspeed: Double
+    val windspeed: Double,
+    @SerializedName("is_day")
+    val isDay :Int,
+    val time: String
 )
